@@ -1,0 +1,8 @@
+steps:
+- name: 'us-central1-docker.pkg.dev/user-test/packer/packer:latest'
+  entrypoint: 'packer'
+  args:
+    - 'build'
+    - '.' # <--- This tells Packer to build all .pkr.hcl files in the current directory
+    # ... other -var flags ...
+  dir: 'git-imagebuilder' # <--- SET THE WORKING DIRECTORY FOR THIS STEP
