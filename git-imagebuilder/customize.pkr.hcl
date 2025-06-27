@@ -53,7 +53,7 @@ source "googlecompute" "imagebuilder" {
   project_id              = var.project_id
   source_image            = var.source_image
   zone                    = var.zone
-  machine_type            = "n2-standard-4"
+  machine_type            = "e2-medium"
   disk_type               = "pd-balanced"
   disk_size               = 90
   image_name              = var.target_image_name
