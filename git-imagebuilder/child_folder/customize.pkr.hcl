@@ -55,7 +55,7 @@ source "googlecompute" "imagebuilder" {
   zone                    = var.zone
   machine_type            = "e2-medium"
   disk_type               = "pd-balanced"
-  disk_size               = 120
+  disk_size               = 121
   image_name              = var.target_image_name
   image_description       = var.target_image_description
   image_storage_locations = [var.target_image_region]
